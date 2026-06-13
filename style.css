@@ -210,6 +210,31 @@ nav ul li a.active {
     margin-bottom: 35px;
 }
 
+.feature-title h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+}
+
+.feature-title p {
+    color: #666;
+    font-size: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.title-line {
+    width: 50px;
+    height: 3px;
+    background: #e8500a;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+
+/* vehicles grid */
 .vehicles-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -246,6 +271,86 @@ nav ul li a.active {
     transform: scale(1.05);
 }
 
+.card-body {
+    padding: 15px;
+}
+
+
+
+
+.card-body h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+.vehicle-type {
+    display: inline-block;
+    background: rgba(232, 80, 10, 0.1);
+    color: #e8500a;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 9px;
+    /* border-radius: 10px; */
+    margin-bottom: 7px;
+    text-transform: uppercase;
+}
+
+.specs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 12px;
+}
+
+.spec {
+    font-size: 15px;
+    color: #777;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2C5EAD;
+}
+
+.price span {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+}
+
+.btn-small {
+    padding: 7px 16px;
+    font-size: 13px;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #4BB8FA;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+}
+
+.btn-small:hover {
+    background: #2C5EAD;
+    color: white;
+}
+
 
 
 
@@ -270,3 +375,42 @@ footer {
     padding-bottom: 30px;
 }
 
+
+
+
+
+footer h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+    list-style: none;
+}
+
+.footer-col ul li a {
+    font-size: 13px;
+    color: #777;
+    transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+    color: #e8500a;
+}
+
+
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 18px;
+    align-items: center;
+    font-size: 12px;
+    color: #555;
+}
