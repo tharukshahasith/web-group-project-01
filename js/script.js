@@ -1,3 +1,24 @@
+
+// -- MOBILE MENU TOGGLE --
+function toggleMenu() {
+    var menu = document.getElementById("mobileNav");
+    if (menu.classList.contains("show")) {
+        menu.classList.remove("show");
+    } else {
+        menu.classList.add("show");
+    }
+}
+
+// close mobile menu when clicking outside
+document.addEventListener("click", function(e) {
+    var menu = document.getElementById("mobileNav");
+    var btn = document.getElementById("hamburgerBtn");
+    if (menu && btn && !menu.contains(e.target) && !btn.contains(e.target)) {
+        menu.classList.remove("show");
+    }
+});
+
+
 function showTime() {
     var dateEl = document.getElementById("live-date");
     var timeEl = document.getElementById("live-time");

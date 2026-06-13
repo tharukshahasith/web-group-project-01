@@ -92,6 +92,49 @@ nav ul li a.active {
     color: white;
 }
 
+/* hamburger for mobile */
+/* get from the web searching */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 5px;
+    background: none;
+    border: none;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+}
+
+/* mobile menu */
+.mobile-nav {
+    display: none;
+    background: #1a1a2e;
+    border-top: 1px solid #2a2a4e;
+}
+
+.mobile-nav a {
+    display: block;
+    color: #ccc;
+    padding: 13px 20px;
+    font-size: 14px;
+    border-bottom: 1px solid #2a2a4e;
+}
+
+.mobile-nav a:hover {
+    background: #2a2a4e;
+    color: #e8500a;
+}
+
+.mobile-nav.show {
+    display: block;
+}
+
 
 
 
@@ -413,4 +456,49 @@ footer h4 {
     align-items: center;
     font-size: 12px;
     color: #555;
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .vehicles-grid { grid-template-columns: 1fr 1fr; }
+    .why-grid { grid-template-columns: 1fr 1fr; }
+    .reviews-grid { grid-template-columns: 1fr 1fr; }
+    .team-grid { grid-template-columns: 1fr 1fr; }
+    .mv-grid { grid-template-columns: 1fr 1fr; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .booking-layout { grid-template-columns: 1fr; }
+    .about-split { grid-template-columns: 1fr; }
+    .contact-layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+    nav ul { display: none; }
+    .hamburger { display: flex; }
+
+    .hero h1 { font-size: 28px; }
+    .hero { min-height: auto; padding: 40px 15px; }
+
+    .vehicles-grid { grid-template-columns: 1fr; }
+    .why-grid { grid-template-columns: 1fr; }
+    .reviews-grid { grid-template-columns: 1fr; }
+    .team-grid { grid-template-columns: 1fr 1fr; }
+    .mv-grid { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+
+    .form-grid { grid-template-columns: 1fr; }
+    .field-group.full { grid-column: 1; }
+
+    .search-row { flex-direction: column; }
+
+    .page-wrap { padding: 30px 15px; }
+    .stats-inner { flex-direction: column; }
+
+    .summary-box { position: static; }
+    .footer-bottom { flex-direction: column; text-align: center; }
 }
