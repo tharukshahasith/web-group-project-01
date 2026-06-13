@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pricing.css">
     <title>Document</title>
 </head>
 <body>
@@ -32,6 +33,219 @@
         </div>
     </nav>
 
+    <!-- PAGE BANNER -->
+<div class="page-banner">
+    <div class="inner">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &rsaquo; Pricing
+        </div>
+        <h1>Vehicle <span>Pricing</span></h1>
+        <p>Daily and weekly rates for all our vehicles. No hidden charges.</p>
+    </div>
+</div>
+
+<!-- PRICING TABLE -->
+<div class="page-wrap">
+
+    <div class="rate-sheet-header"><h2>Rate Sheet</h2>
+        <a href="booking.html" class="btn btn-orange">Book Now</a>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Vehicle</th>
+                    <th>Type</th>
+                    <th>Seats</th>
+                    <th>Transmission</th>
+                    <th>Fuel</th>
+                    <th>Daily Rate</th>
+                    <th>Weekly Rate</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Suzuki Alto</td>
+                    <td><span class="tag tag-car">Car</span></td>
+                    <td>4</td>
+                    <td>Manual</td>
+                    <td>Petrol</td>
+                    <td class="rate">Rs. 3,500</td>
+                    <td class="rate">Rs. 22,000</td>
+                    <td><a href="booking.html" class="btn-small">Book</a></td>
+                </tr>
+                <tr>
+                    <td>Suzuki Wagon R</td>
+                    <td><span class="tag tag-car">Car</span></td>
+                    <td>4</td>
+                    <td>Automatic</td>
+                    <td>Hybrid</td>
+                    <td class="rate">Rs. 4,000</td>
+                    <td class="rate">Rs. 25,000</td>
+                    <td><a href="booking.html" class="btn-small">Book</a></td>
+                </tr>
+                <tr>
+                    <td>Toyota Prius</td>
+                    <td><span class="tag tag-car">Car</span></td>
+                    <td>5</td>
+                    <td>Automatic</td>
+                    <td>Hybrid</td>
+                    <td class="rate">Rs. 6,500</td>
+                    <td class="rate">Rs. 40,000</td>
+                    <td><a href="booking.html" class="btn-small">Book</a></td>
+                </tr>
+                <tr>
+                    <td>Toyota HIACE (KDH)</td>
+                    <td><span class="tag tag-van">Van</span></td>
+                    <td>14</td>
+                    <td>Automatic/Manual</td>
+                    <td>Diesel</td>
+                    <td class="rate">Rs. 8,000</td>
+                    <td class="rate">Rs. 50,000</td>
+                    <td><a href="booking.html" class="btn-small">Book</a></td>
+                </tr>
+                <tr>
+                    <td>Suzuki Every</td>
+                    <td><span class="tag tag-van">Van</span></td>
+                    <td>7</td>
+                    <td>Automatic</td>
+                    <td>Petrol</td>
+                    <td class="rate">Rs. 6,500</td>
+                    <td class="rate">Rs. 40,000</td>
+                    <td><a href="booking.html" class="btn-small">Book</a></td>
+                </tr>
+                <tr>
+                    <td>Toyota Land Cruiser V8</td>
+                    <td><span class="tag tag-suv">SUV</span></td>
+                    <td>7</td>
+                    <td>Automatic</td>
+                    <td>Diesel</td>
+                    <td class="rate">Rs. 10,500</td>
+                    <td class="rate">Rs. 65,000</td>
+                    <td><a href="booking.html" class="btn-small">Book</a></td>
+                </tr>
+                <tr>
+                    <td>Honda Vezel</td>
+                    <td><span class="tag tag-suv">SUV</span></td>
+                    <td>5</td>
+                    <td>Automatic</td>
+                    <td>Hybrid</td>
+                    <td class="rate">Rs. 6,200</td>
+                    <td class="rate">Rs. 38,500</td>
+                    <td><a href="booking.html" class="btn-small">Book</a></td>
+                </tr>
+                <tr>
+                    <td>BMW i8</td>
+                    <td><span class="tag tag-luxury">Luxury</span></td>
+                    <td>2</td>
+                    <td>Automatic</td>
+                    <td>Petrol</td>
+                    <td class="rate">Rs. 11,500</td>
+                    <td class="rate">Rs. 72,000</td>
+                    <td><a href="booking.html" class="btn-small">Book</a></td>
+                </tr>
+                <tr>
+                    <td>Toyota Premio</td>
+                    <td><span class="tag tag-car">Car</span></td>
+                    <td>5</td>
+                    <td>Automatic</td>
+                    <td>Petrol</td>
+                    <td class="rate">Rs. 7,000</td>
+                    <td class="rate">Rs. 43,500</td>
+                    <td><a href="booking.html" class="btn-small">Book</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="tip-box">
+        <strong>Weekly rates</strong> apply for bookings of 7 or more days in a row.
+        All prices are in Sri Lankan Rupees and include insurance and roadside assistance.
+        Payment is made at vehicle pickup — no advance payment needed.
+    </div>
+
+    <!-- PRICE CALCULATOR -->
+    <div class="calculator">
+        <h3>Price Calculator</h3>
+        <p>Estimate your total cost before booking.</p>
+
+        <div class="calc-fields">
+            <div class="field">
+                <label>Select Vehicle</label>
+                <select id="calcVehicle">
+                    <option value="">-- Choose vehicle --</option>
+                    <option value="3500">Suzuki Alto — Rs. 3,500/day</option>
+                    <option value="4000">Suzuki Wagon R — Rs. 4,000/day</option>
+                    <option value="6500">Toyota Prius — Rs. 6,500/day</option>
+                    <option value="8000">Toyota HIACE (KDH) — Rs. 8,000/day</option>
+                    <option value="6501">Suzuki Every — Rs. 6,500/day</option> <!-- Identical prices handled smoothly via custom mapping below -->
+                    <option value="10500">Toyota Land Cruiser V8 — Rs. 10,500/day</option>
+                    <option value="6200">Honda Vezel — Rs. 6,200/day</option>
+                    <option value="11500">BMW i8 — Rs. 11,500/day</option>
+                    <option value="7000">Toyota Premio — Rs. 7,000/day</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Number of Days</label>
+                <input type="number" id="calcDays" min="1" max="365" placeholder="e.g. 3">
+            </div>
+            <div>
+                <button id="calcBtn" class="btn btn-orange">Calculate</button>
+            </div>
+        </div>
+
+        <div class="calc-result" id="calcResult">
+            <div>
+                <div class="total-label">Estimated Total</div>
+                <div class="total-amount" id="totalAmount">Rs. 0</div>
+                <div class="breakdown" id="calcBreakdown"></div>
+            </div>
+            <a href="booking.html" class="btn btn-orange">Book Now</a>
+        </div>
+    </div>
+
+    <!-- WHAT'S INCLUDED -->
+        <div class="included-section">
+            <div class="included-header">
+                <h2>What's Included in Every Rental</h2>
+                <div class="title-line"></div>
+            </div>
+ 
+            <div class="included-grid">
+                <div class="included-card">
+                    <span class="included-icon">🛡️</span>
+                    <div>
+                        <h4>Comprehensive Insurance</h4>
+                        <p>Full coverage on all vehicles in our fleet.</p>
+                    </div>
+                </div>
+                <div class="included-card">
+                    <span class="included-icon">🔧</span>
+                    <div>
+                        <h4>24/7 Roadside Assistance</h4>
+                        <p>We're available any time if something goes wrong.</p>
+                    </div>
+                </div>
+                <div class="included-card">
+                    <span class="included-icon">🛣️</span>
+                    <div>
+                        <h4>Unlimited Mileage</h4>
+                        <p>Drive anywhere in Sri Lanka — no per-km charges.</p>
+                    </div>
+                </div>
+                <div class="included-card">
+                    <span class="included-icon">🔄</span>
+                    <div>
+                        <h4>Free Cancellation</h4>
+                        <p>Cancel up to 48 hours before pickup at no charge.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 
@@ -109,6 +323,7 @@
     </footer> -->
 
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/pricing.js"></script>
 </body>
 </html>
