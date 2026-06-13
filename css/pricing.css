@@ -1,0 +1,508 @@
+
+
+
+
+
+
+/* inner page banner (not home) */
+.page-banner {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 45px 20px;
+    color: white;
+}
+
+.page-banner .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-banner h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.page-banner h1 span {
+    color: #e8500a;
+}
+
+.page-banner p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* breadcrumb */
+.breadcrumb {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.breadcrumb a {
+    color: #e8500a;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* PAGE WRAP */
+ 
+.page-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* RATE SHEET HEADER ROW */
+ 
+.rate-sheet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+ 
+.rate-sheet-header h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a1a2e;
+}
+
+/* Buttons */
+
+.btn {
+    padding: 11px 24px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+}
+
+.btn-small {
+    padding: 7px 16px;
+    font-size: 13px;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #e8500a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+}
+ 
+.btn-small:hover {
+    background: #c94009;
+    color: white;
+}
+
+.btn-orange {
+    background: #e8500a;
+    color: white;
+}
+
+.btn-orange:hover {
+    background: #c94009;
+    color: white;
+}
+
+
+/* I added overflow-x for mobile scrolling */
+.table-container {
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    background: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+thead {
+    background: #1a1a2e;
+    color: white;
+}
+
+thead th {
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+tbody tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+tbody tr:hover {
+    background: #fff8f5;
+}
+
+tbody td {
+    padding: 13px 16px;
+    color: #555;
+}
+
+/* first col bold */
+tbody td:first-child {
+    font-weight: bold;
+    color: #1a1a2e;
+}
+
+.rate {
+    color: #e8500a;
+    font-weight: bold;
+}
+
+/* type badges for table */
+.tag {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.tag-car     { background: #dbeafe; color: #1e40af; }
+.tag-suv     { background: #dcfce7; color: #166534; }
+.tag-van     { background: #fef9c3; color: #854d0e; }
+.tag-luxury  { background: #f3e8ff; color: #6b21a8; }
+
+/* INFO/TIP BOX  */
+
+.tip-box {
+    background: #fff8f5;
+    border-left: 4px solid #e8500a;
+    padding: 12px 16px;
+    border-radius: 0 6px 6px 0;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+
+/* PRICE CALCULATOR (on pricing page) */
+
+.calculator {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 35px;
+}
+
+.calculator h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 5px;
+}
+
+.calculator > p {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.calc-fields {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.calc-fields .field {
+    flex: 1;
+    min-width: 160px;
+}
+
+.calc-fields label {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #888;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.calc-fields select,
+.calc-fields input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fafafa;
+}
+
+.calc-fields select:focus,
+.calc-fields input:focus {
+    outline: none;
+    border-color: #e8500a;
+}
+
+/* result box */
+.calc-result {
+    margin-top: 20px;
+    background: #1a1a2e;
+    border-radius: 8px;
+    padding: 20px 25px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.calc-result.show {
+    display: flex;
+}
+
+.calc-result .total-label {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.calc-result .total-amount {
+    font-size: 32px;
+    font-weight: bold;
+    color: #e8500a;
+}
+
+.calc-result .breakdown {
+    color: #aaa;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+/*  BOOKING FORM    */
+
+.booking-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.form-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.form-card h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 5px;
+}
+
+.form-card .subtitle {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+/* form grid - 2 columns */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* span full width */
+.field-group.full {
+    grid-column: 1 / -1;
+}
+
+.field-group label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.field-group input,
+.field-group select,
+.field-group textarea {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fafafa;
+    color: #333;
+    transition: border-color 0.2s;
+}
+
+.field-group input:focus,
+.field-group select:focus,
+.field-group textarea:focus {
+    outline: none;
+    border-color: #e8500a;
+    background: white;
+}
+
+.field-group textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+/* validation error */
+.field-group .err {
+    display: none;
+    font-size: 12px;
+    color: #dc2626;
+}
+
+/* show error class via JS */
+.field-group.error input,
+.field-group.error select,
+.field-group.error textarea {
+    border-color: #dc2626;
+    background: #fff5f5;
+}
+
+.field-group.error .err {
+    display: block;
+}
+
+/* success message */
+.success-msg {
+    display: none;
+    background: #d1fae5;
+    border: 1px solid #6ee7b7;
+    color: #065f46;
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* booking summary sidebar */
+.summary-box {
+    background: #1a1a2e;
+    border-radius: 10px;
+    padding: 22px;
+    color: white;
+    position: sticky;
+    top: 80px;
+}
+
+.summary-box h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #e8500a;
+    margin-bottom: 18px;
+}
+
+.sum-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-size: 13px;
+}
+
+.sum-row .l { color: #888; }
+.sum-row .v { font-weight: bold; font-size: 13px; }
+
+.sum-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.sum-total .label { font-size: 14px; font-weight: bold; }
+
+.sum-total .amount {
+    font-size: 26px;
+    font-weight: bold;
+    color: #e8500a;
+}
+
+/* WHAT'S INCLUDED SECTION  */
+ 
+.included-section {
+    margin-top: 40px;
+}
+ 
+.included-header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+ 
+.included-header h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a1a2e;
+}
+ 
+.title-line {
+    width: 50px;
+    height: 3px;
+    background: #e8500a;
+    border-radius: 2px;
+    margin: 8px 0 0 0;
+}
+ 
+.included-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+ 
+.included-card {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 18px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+ 
+.included-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+ 
+.included-card h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+}
+ 
+.included-card p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+
+
