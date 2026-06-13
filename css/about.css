@@ -1,0 +1,63 @@
+#contain01{
+    background-color:rgb(4, 4, 70);
+    margin-bottom: 2px;
+}
+#pInContainer {
+    padding: 15px 0 5px 120px;
+    color: white;
+}
+#p2InContainer {
+    padding-bottom:100px;
+    padding-left: 120px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top:0px
+}
+
+
+#AboutImage {
+    margin-left: 0px;
+    margin-right: 20px;
+    height: 350px;
+    width: 100%;
+}
+
+#aboutP1 {
+  margin-right: 30px; /* adds space from the right edge */
+  font-size: 24px;    /* example styling */
+}
+
+#aboutH1 {
+    font-size: 36px;
+    color: #1a1a2e;
+    text-align: center;
+}
+
+#contain02 {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 20px;
+}
+
+.text-center {
+    margin: 0;
+}
+#sinceH2{
+    text-align: center;
+}
+#btn1{
+    background-color: #e8500a;
+    color: white;
+    cursor: pointer;
+}
+#btn1:hover {
+    background-color: #b53908;
+    color: white;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
