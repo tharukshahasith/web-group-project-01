@@ -144,13 +144,13 @@ nav ul li a.active {
     margin-bottom: 20px;
 }
 
-.banner-btn a {
+.banner-btn .btn {
     padding: 11px 24px;
     border-radius: 6px;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
-    border: none;
+    /* border: none; */
     text-decoration: none;
     display: inline-block;
     transition: background 0.2s;
@@ -161,11 +161,21 @@ nav ul li a.active {
     color: white;
 }
 
+.btn-color:hover {
+    background: #c94009;
+    color: white;
+}
+
 
 .btn-white {
     background: transparent;
     color: white;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.btn-white:hover {
+    background: white;
+    color: #1a1a2e;
 }
 
 
@@ -174,9 +184,9 @@ nav ul li a.active {
     display: inline-block;
     background: rgba(255,255,255,0.12);
     border: 1px solid rgba(255,255,255,0.25);
-    padding: 8px 16px;
+    padding: 8px 18px;
     /* border-radius: 20px; */
-    font-size: 13px;
+    font-size: 15px;
     color: #eee;
     margin-top: 10px;
 }
