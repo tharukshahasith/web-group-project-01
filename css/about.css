@@ -123,5 +123,26 @@
     }
 }
 
+/* Make team images (those under images/team/) responsive inside cards only */
+.card img[src*="images/team"] {
+    width: 100%;
+    height: 200px; /* fixed thumbnail height for consistent cards */
+    max-height: 220px;
+    display: block;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .card img[src*="images/team"] {
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card img[src*="images/team"] {
+        height: 140px;
+    }
+}
+
 
 
