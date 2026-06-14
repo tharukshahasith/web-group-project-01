@@ -92,5 +92,36 @@
     font-size: 14px;
 }
 
+.about-mission-section .about-card {
+    border: 2px solid #0d9488;
+    min-height: 220px;
+}
+
+.about-mission-section .about-card-body,
+.about-mission-section .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-card-title {
+    text-align: center;
+    color: #0d9488;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .about-mission-section .row {
+        gap: 1rem;
+    }
+    .about-mission-section .col-md-6 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    #AboutImage {
+        height: auto;
+    }
+}
+
 
 
