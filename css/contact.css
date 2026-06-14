@@ -146,6 +146,102 @@
     margin-bottom: 22px;
 }
 
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* span full width */
+.field-group.full {
+    grid-column: 1 / -1;
+}
+
+.field-group label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.field-group input,
+.field-group select,
+.field-group textarea {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fafafa;
+    color: #333;
+    transition: border-color 0.2s;
+}
+
+.field-group input:focus,
+.field-group select:focus,
+.field-group textarea:focus {
+    outline: none;
+    border-color: #e8500a;
+    background: white;
+}
+
+.field-group textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+/* validation error */
+.field-group .err {
+    display: none;
+    font-size: 12px;
+    color: #dc2626;
+}
+
+/* show error class via JS */
+.field-group.error input,
+.field-group.error select,
+.field-group.error textarea {
+    border-color: #dc2626;
+    background: #fff5f5;
+}
+
+.field-group.error .err {
+    display: block;
+}
+
+/* success message */
+.success-msg {
+    display: none;
+    background: #d1fae5;
+    border: 1px solid #6ee7b7;
+    color: #065f46;
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 11px 24px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+}
+
+
 /* FAQ */
 .faq-section {
     margin-top: 50px;
