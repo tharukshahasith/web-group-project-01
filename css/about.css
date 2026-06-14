@@ -61,3 +61,36 @@
     transform: scale(1.05);
     transition: transform 0.3s;
 }
+
+
+
+
+
+.page-banner {
+    background: #093030;
+    padding: 45px 20px;
+    color: white;
+}
+
+.page-banner .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-banner h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.page-banner h1 span {
+    color: #0d9488;
+}
+
+.page-banner p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+
+
