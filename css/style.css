@@ -49,11 +49,25 @@ a {
     text-decoration: none;
 }
 
+.logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
 .logo-name {
     font-size: 22px;
     font-weight: bold;
     color: #ffffff;
     letter-spacing: -0.5px;
+}
+
+.logo-name span {
+    color: #4BB8FA;
 }
 
 nav ul {
