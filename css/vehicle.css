@@ -5,7 +5,7 @@
 
 
 .page-header {
-    background-color: #1591DC;
+    background-color: #093030;
     padding: 45px 12%;
     color: white;   
 }
@@ -22,7 +22,7 @@
 }
 
 .page-header h1 span {
-    color: #e8500a;
+    color: #0d9488;
 }
 
 .page-header p {
@@ -75,14 +75,13 @@
 
 
 .specs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .spec {
-    font-size: 12px;
+    font-size: 15px;
     color: #777;
     display: flex;
     align-items: center;
@@ -100,7 +99,7 @@
 .price {
     font-size: 22px;
     font-weight: bold;
-    color: #e8500a;
+    color: #0d9488;
 }
 
 .price span {
@@ -114,7 +113,7 @@
     font-size: 13px;
     border-radius: 5px;
     font-weight: bold;
-    background: #e8500a;
+    background: #0d9488;
     color: white;
     border: none;
     cursor: pointer;
@@ -124,7 +123,7 @@
 }
 
 .btn-small:hover {
-    background: #c94009;
+    background: #0f766e;
     color: white;
 }
 
