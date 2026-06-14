@@ -25,7 +25,7 @@ a {
 /* created by Hasith */
 
 #navbar-container {
-    background-color: #12243f;
+    background-color: white;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -62,12 +62,12 @@ a {
 .logo-name {
     font-size: 22px;
     font-weight: bold;
-    color: #ffffff;
+    color: #0f172a;
     letter-spacing: -0.5px;
 }
 
 .logo-name span {
-    color: #4BB8FA;
+    color: #0d9488;
 }
 
 nav ul {
@@ -85,7 +85,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f1f5fb;
+    color: #475569;
     padding: 9px 14px;
     border-radius: 6px;
     display: block;
@@ -97,18 +97,19 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgba(255,255,255,0.12);
-    color: #ffffff;
+    background-color: #f0fdfa;
+    color: #0d9488;
 }
 
 nav ul li a.active {
-    color: #ffffff;
-    background-color: rgba(255,255,255,0.16);
+    color: #0d9488;
+    background-color: #f0fdfa;
+    font-size: 600;
 }
 
 .nav-book-btn {
-    background: #ff8c42;
-    color: #0f172a;
+    background: #0d9488;
+    color: white;
     padding: 10px 20px;
     min-height: 44px;
     border-radius: 8px;
@@ -121,8 +122,8 @@ nav ul li a.active {
 }
 
 .nav-book-btn:hover {
-    background: #ff9d5d;
-    color: #0f172a;
+    background: #0f766e;
+    color: white;
     transform: translateY(-1px);
 }
 
@@ -203,7 +204,7 @@ nav ul li a.active {
 }
 
 .banner h1 span {
-    color: #4BB8FA;
+    color: #2bc8bb;
 }
 
 .banner p {
@@ -234,12 +235,12 @@ nav ul li a.active {
 }
 
 .btn-color {
-    background: #e8500a;
+    background: #0d9488;
     color: white;
 }
 
 .btn-color:hover {
-    background: #c94009;
+    background: #0f766e;
     color: white;
 }
 
@@ -305,7 +306,7 @@ nav ul li a.active {
 .title-line {
     width: 50px;
     height: 3px;
-    background: #e8500a;
+    background: #0d9488;
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -362,17 +363,7 @@ nav ul li a.active {
     margin-bottom: 10px;
 }
 
-.vehicle-type {
-    display: inline-block;
-    background: rgba(232, 80, 10, 0.1);
-    color: #e8500a;
-    font-size: 11px;
-    font-weight: bold;
-    padding: 2px 9px;
-    /* border-radius: 10px; */
-    margin-bottom: 7px;
-    text-transform: uppercase;
-}
+
 
 .specs {
     display: flex;
@@ -400,7 +391,7 @@ nav ul li a.active {
 .price {
     font-size: 22px;
     font-weight: bold;
-    color: #2C5EAD;
+    color: #0d9488;
 }
 
 .price span {
@@ -414,8 +405,8 @@ nav ul li a.active {
     font-size: 13px;
     border-radius: 5px;
     font-weight: bold;
-    background: #4BB8FA;
-    color: rgb(0, 0, 0);
+    background: #0d9488;
+    color: white;
     border: none;
     cursor: pointer;
     text-decoration: none;
@@ -424,7 +415,7 @@ nav ul li a.active {
 }
 
 .btn-small:hover {
-    background: #2C5EAD;
+    background: #0f766e;
     color: white;
 }
 
@@ -438,7 +429,7 @@ nav ul li a.active {
 /* footer */
 /* created by Hasith */
 footer {
-    background-color: #0f172a;
+    background-color: #0c1b1a;
     color: #d8e1f2;
     padding: 50px 20px 24px;
 }
