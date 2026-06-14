@@ -48,12 +48,12 @@
     text-align: center;
 }
 #btn1{
-    background-color: #e8500a;
+    background-color: #0d9488;
     color: white;
     cursor: pointer;
 }
 #btn1:hover {
-    background-color: #b53908;
+    background-color: #0f766e;
     color: white;
 }
 

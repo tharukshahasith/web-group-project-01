@@ -1,0 +1,204 @@
+.page-banner {
+    background: #093030;
+    padding: 45px 20px;
+    color: white;
+}
+
+.page-banner .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-banner h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.page-banner h1 span {
+    color: #0d9488;
+}
+
+.page-banner p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+
+
+
+/*---------------------*/
+
+.page-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+
+/*------- speacial --------*/
+
+.booking-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.form-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.form-card h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 5px;
+}
+
+.form-card .subtitle {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+/* form grid - 2 columns */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* span full width */
+.field-group.full {
+    grid-column: 1 / -1;
+}
+
+.field-group label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.field-group input,
+.field-group select,
+.field-group textarea {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fafafa;
+    color: #333;
+    transition: border-color 0.2s;
+}
+
+.field-group input:focus,
+.field-group select:focus,
+.field-group textarea:focus {
+    outline: none;
+    border-color: #0d9488;
+    background: white;
+}
+
+.field-group textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+/* validation error */
+.field-group .err {
+    display: none;
+    font-size: 12px;
+    color: #dc2626;
+}
+
+/* show error class via JS */
+.field-group.error input,
+.field-group.error select,
+.field-group.error textarea {
+    border-color: #0d9488;
+    background: #fff5f5;
+}
+
+.field-group.error .err {
+    display: block;
+}
+
+/* success message */
+.success-msg {
+    display: none;
+    background: #d1fae5;
+    border: 1px solid #6ee7b7;
+    color: #065f46;
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* booking summary sidebar */
+.summary-box {
+    background: #1a1a2e;
+    border-radius: 10px;
+    padding: 22px;
+    color: white;
+    position: sticky;
+    top: 80px;
+}
+
+.summary-box h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0d9488;
+    margin-bottom: 18px;
+}
+
+.sum-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-size: 13px;
+}
+
+.sum-row .l { color: #888; }
+.sum-row .v { font-weight: bold; font-size: 13px; }
+
+.sum-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.sum-total .label { font-size: 14px; font-weight: bold; }
+
+.sum-total .amount {
+    font-size: 26px;
+    font-weight: bold;
+    color: #0d9488;
+}
+
+.btn {
+    padding: 11px 24px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+}

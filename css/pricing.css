@@ -464,7 +464,7 @@ tbody td:first-child {
 .title-line {
     width: 50px;
     height: 3px;
-    background: #e8500a;
+    background: #0d9488;
     border-radius: 2px;
     margin: 8px 0 0 0;
 }
@@ -485,11 +485,7 @@ tbody td:first-child {
     align-items: flex-start;
 }
  
-.included-icon {
-    font-size: 24px;
-    flex-shrink: 0;
-}
- 
+
 .included-card h4 {
     font-size: 14px;
     font-weight: bold;
