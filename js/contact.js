@@ -1,17 +1,17 @@
-var contactForm = document.getElementById("contactForm");
+let contactForm = document.getElementById("contactForm");
 if (contactForm) {
     contactForm.addEventListener("submit", function(e) {
         e.preventDefault();
 
-        var allGroups = ["cfg-name","cfg-email","cfg-subject","cfg-message"];
+        let allGroups = ["cfg-name","cfg-email","cfg-subject","cfg-message"];
         allGroups.forEach(function(id) { clearError(id); });
 
-        var name    = document.getElementById("cName") ? document.getElementById("cName").value.trim() : "";
-        var email   = document.getElementById("cEmail") ? document.getElementById("cEmail").value.trim() : "";
-        var subject = document.getElementById("cSubject") ? document.getElementById("cSubject").value : "";
-        var message = document.getElementById("cMessage") ? document.getElementById("cMessage").value.trim() : "";
+        let name    = document.getElementById("cName") ? document.getElementById("cName").value.trim() : "";
+        let email   = document.getElementById("cEmail") ? document.getElementById("cEmail").value.trim() : "";
+        let subject = document.getElementById("cSubject") ? document.getElementById("cSubject").value : "";
+        let message = document.getElementById("cMessage") ? document.getElementById("cMessage").value.trim() : "";
 
-        var valid = true;
+        let valid = true;
 
         if (name.length < 2) {
             showError("cfg-name", "Please enter your name.");
@@ -31,7 +31,7 @@ if (contactForm) {
         }
 
         if (valid) {
-            var successEl = document.getElementById("contactSuccess");
+            let successEl = document.getElementById("contactSuccess");
             if (successEl) {
                 successEl.style.display = "block";
                 successEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
@@ -44,11 +44,11 @@ if (contactForm) {
 
 
 // faq
-var faqItems = document.querySelectorAll(".faq-item");
+let faqItems = document.querySelectorAll(".faq-item");
 faqItems.forEach(function(item) {
-    var question = item.querySelector(".faq-q");
+    let question = item.querySelector(".faq-q");
     question.addEventListener("click", function() {
-        var isOpen = item.classList.contains("open");
+        let isOpen = item.classList.contains("open");
         // close all
         faqItems.forEach(function(i) { i.classList.remove("open"); });
         // open this one if it was closed
@@ -60,16 +60,16 @@ faqItems.forEach(function(item) {
 
 
 function showError(groupId, msg) {
-    var group = document.getElementById(groupId);
+    let group = document.getElementById(groupId);
     if (!group) return;
     group.classList.add("error");
-    var err = group.querySelector(".err");
+    let err = group.querySelector(".err");
     if (err && msg) err.textContent = msg;
 }
 
 // helper: clear error
 function clearError(groupId) {
-    var group = document.getElementById(groupId);
+    let group = document.getElementById(groupId);
     if (!group) return;
     group.classList.remove("error");
 }
@@ -82,15 +82,15 @@ function isValidEmail(email) {
 
 // phone check - at least 10 digits
 function isValidPhone(phone) {
-    var digits = phone.replace(/\D/g, "");
+    let digits = phone.replace(/\D/g, "");
     return digits.length >= 10;
 }
 
 // generate random booking reference
 function makeRef() {
-    var chars = "ABCDEFGHJKLMNPQRSTUVWXYZ0123456789";
-    var ref = "DE-";
-    for (var i = 0; i < 7; i++) {
+    let chars = "ABCDEFGHJKLMNPQRSTUVWXYZ0123456789";
+    let ref = "DE-";
+    for (let i = 0; i < 7; i++) {
         ref += chars[Math.floor(Math.random() * chars.length)];
     }
     return ref;

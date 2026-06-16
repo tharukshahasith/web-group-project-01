@@ -1,7 +1,7 @@
 
 // -- MOBILE MENU TOGGLE --
 function toggleMenu() {
-    var menu = document.getElementById("mobileNav");
+    let menu = document.getElementById("mobileNav");
     if (menu.classList.contains("show")) {
         menu.classList.remove("show");
     } else {
@@ -11,8 +11,8 @@ function toggleMenu() {
 
 // close mobile menu when clicking outside
 document.addEventListener("click", function(e) {
-    var menu = document.getElementById("mobileNav");
-    var btn = document.getElementById("hamburgerBtn");
+    let menu = document.getElementById("mobileNav");
+    let btn = document.getElementById("hamburgerBtn");
     if (menu && btn && !menu.contains(e.target) && !btn.contains(e.target)) {
         menu.classList.remove("show");
     }
@@ -20,23 +20,23 @@ document.addEventListener("click", function(e) {
 
 
 function showTime() {
-    var dateEl = document.getElementById("live-date");
-    var timeEl = document.getElementById("live-time");
+    let dateEl = document.getElementById("live-date");
+    let timeEl = document.getElementById("live-time");
     if (!dateEl && !timeEl) return;
-    var now = new Date();
+    let now = new Date();
     // format date
-    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    var months = ["January", "February", "March", "April", "May", "June",
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let months = ["January", "February", "March", "April", "May", "June",
                   "July", "August", "September", "October", "November", "December"];
-    var dayName = days[now.getDay()];
-    var date = now.getDate();
-    var month = months[now.getMonth()];
-    var year = now.getFullYear();
+    let dayName = days[now.getDay()];
+    let date = now.getDate();
+    let month = months[now.getMonth()];
+    let year = now.getFullYear();
     // format time
-    var hours = now.getHours();
-    var minutes = now.getMinutes();
-    var seconds = now.getSeconds();
-    var ampm = hours >= 12 ? "PM" : "AM";
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+    let ampm = hours >= 12 ? "PM" : "AM";
     hours = hours % 12;
     if (hours == 0) hours = 12;
     // add leading zero
@@ -48,3 +48,16 @@ function showTime() {
 // update every second
 setInterval(showTime, 1000);
 showTime();
+
+//about page
+
+function Count(id, target,delay) {
+    
+    for (let i = 1; i <= target; i++) {
+      setTimeout(function(num) {document.getElementById(id).innerText = num}, i * delay, i);
+    }
+  }
+  Count('NoOfVehicle',  150,10);
+  Count('cutom',  12000,0.125);
+  Count('location',  25,60);
+  Count('yrs',25,60);
